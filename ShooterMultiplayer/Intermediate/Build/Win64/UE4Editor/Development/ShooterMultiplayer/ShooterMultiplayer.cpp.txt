@@ -1,0 +1,2 @@
+D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\Definitions.ShooterMultiplayer.h
+d:\repos\shootermult\shootermultiplayer\source\shootermultiplayer\ShooterMultiplayer.h
