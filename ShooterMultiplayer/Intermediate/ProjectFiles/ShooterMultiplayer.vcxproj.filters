@@ -54,4 +54,14 @@
       <Filter>Source\ShooterMultiplayer</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\ShooterMultiplayer\MovingPlatform.h">
+      <Filter>Source\ShooterMultiplayer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\ShooterMultiplayer\MovingPlatform.cpp">
+      <Filter>Source\ShooterMultiplayer</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
