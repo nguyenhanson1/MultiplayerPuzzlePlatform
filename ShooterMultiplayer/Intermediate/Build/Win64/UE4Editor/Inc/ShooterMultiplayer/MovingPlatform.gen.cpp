@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMovingPlatform() {}
 	SHOOTERMULTIPLAYER_API UClass* Z_Construct_UClass_AMovingPlatform();
 	ENGINE_API UClass* Z_Construct_UClass_AStaticMeshActor();
 	UPackage* Z_Construct_UPackage__Script_ShooterMultiplayer();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 // End Cross Module References
 	void AMovingPlatform::StaticRegisterNativesAMovingPlatform()
 	{
@@ -32,9 +33,13 @@ void EmptyLinkFunctionForGeneratedCodeMovingPlatform() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_speed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TargetLocation_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_speed;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_TargetLocation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Speed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Speed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -53,14 +58,23 @@ void EmptyLinkFunctionForGeneratedCodeMovingPlatform() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingPlatform_Statics::NewProp_speed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingPlatform_Statics::NewProp_TargetLocation_MetaData[] = {
+		{ "Category", "MovingPlatform" },
+		{ "MakeEditWidget", "TRUE" },
+		{ "ModuleRelativePath", "MovingPlatform.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMovingPlatform_Statics::NewProp_TargetLocation = { "TargetLocation", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMovingPlatform, TargetLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_TargetLocation_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_TargetLocation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Speed_MetaData[] = {
 		{ "Category", "MovingPlatform" },
 		{ "ModuleRelativePath", "MovingPlatform.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMovingPlatform_Statics::NewProp_speed = { "speed", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMovingPlatform, speed), METADATA_PARAMS(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_speed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_speed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMovingPlatform, Speed), METADATA_PARAMS(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Speed_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Speed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMovingPlatform_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingPlatform_Statics::NewProp_speed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingPlatform_Statics::NewProp_TargetLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Speed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMovingPlatform_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMovingPlatform>::IsAbstract,
@@ -89,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeMovingPlatform() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMovingPlatform, 1494654677);
+	IMPLEMENT_CLASS(AMovingPlatform, 3338229745);
 	template<> SHOOTERMULTIPLAYER_API UClass* StaticClass<AMovingPlatform>()
 	{
 		return AMovingPlatform::StaticClass();

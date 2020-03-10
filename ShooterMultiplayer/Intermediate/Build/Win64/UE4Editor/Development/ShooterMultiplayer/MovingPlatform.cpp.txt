@@ -1,5 +1,5 @@
-D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\Definitions.ShooterMultiplayer.h
-d:\repos\shootermult\shootermultiplayer\source\shootermultiplayer\MovingPlatform.h
-D:\EpicGame\UE_4.23\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
-D:\EpicGame\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
-D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Inc\ShooterMultiplayer\MovingPlatform.generated.h
+D:\New Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\Definitions.ShooterMultiplayer.h
+d:\new repos\shootermult\shootermultiplayer\source\shootermultiplayer\MovingPlatform.h
+D:\Unreal Engine\UE_4.23\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
+D:\Unreal Engine\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
+D:\New Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Inc\ShooterMultiplayer\MovingPlatform.generated.h
