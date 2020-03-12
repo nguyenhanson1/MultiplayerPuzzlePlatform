@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ShooterMultiplayer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{9C799824-C28B-47D4-91A0-0958B9712DF9}</UniqueIdentifier>
+      <UniqueIdentifier>{4F8444BE-10BA-4A6C-9D9C-19F32E3A236E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShooterMultiplayer.Target.cs">
       <Filter>Source</Filter>
@@ -13,7 +13,7 @@
     </None>
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6A47F679-D8B2-414C-8968-61FB55F96D72}</UniqueIdentifier>
+      <UniqueIdentifier>{973D9583-FBFE-40E2-A07A-52C623F64D5B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,12 +31,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ShooterMultiplayer">
-      <UniqueIdentifier>{A3E12464-B571-4CFC-839E-1D6ABE3B2EA9}</UniqueIdentifier>
+      <UniqueIdentifier>{5A1F9B90-6788-48CC-8B44-922519B5C9C4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ShooterMultiplayer\MovingPlatform.cpp">
       <Filter>Source\ShooterMultiplayer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ShooterMultiplayer\MovingPlatform.h">
+      <Filter>Source\ShooterMultiplayer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterMultiplayer\PlatformTrigger.cpp">
+      <Filter>Source\ShooterMultiplayer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterMultiplayer\PlatformTrigger.h">
       <Filter>Source\ShooterMultiplayer</Filter>
     </ClInclude>
     <None Include="..\..\Source\ShooterMultiplayer\ShooterMultiplayer.Build.cs">

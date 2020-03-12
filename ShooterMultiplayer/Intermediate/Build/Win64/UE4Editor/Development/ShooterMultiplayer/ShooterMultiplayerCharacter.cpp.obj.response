@@ -498,9 +498,9 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I Runtime\ClothingSystemRuntimeInterface
-/I "D:\New Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Inc\ShooterMultiplayer"
-/I "D:\New Repos\ShooterMult\ShooterMultiplayer\Source"
-/I "D:\New Repos\ShooterMult\ShooterMultiplayer\Source\ShooterMultiplayer"
+/I D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Inc\ShooterMultiplayer
+/I D:\Repos\ShooterMult\ShooterMultiplayer\Source
+/I D:\Repos\ShooterMult\ShooterMultiplayer\Source\ShooterMultiplayer
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I Runtime\AugmentedReality
@@ -527,17 +527,17 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\New Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\ShooterMultiplayerEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"D:\New Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\ShooterMultiplayerEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\New Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\ShooterMultiplayerEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\New Repos\ShooterMult\ShooterMultiplayer\Source\ShooterMultiplayer\ShooterMultiplayerCharacter.cpp"
-/FI"D:\New Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\Definitions.ShooterMultiplayer.h"
-/Fo"D:\New Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\ShooterMultiplayerCharacter.cpp.obj"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
+/FI"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\ShooterMultiplayerEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\ShooterMultiplayerEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\ShooterMultiplayerEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\Repos\ShooterMult\ShooterMultiplayer\Source\ShooterMultiplayer\ShooterMultiplayerCharacter.cpp"
+/FI"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\Definitions.ShooterMultiplayer.h"
+/Fo"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\ShooterMultiplayerCharacter.cpp.obj"
 /TP
 /GR-
 /W4
