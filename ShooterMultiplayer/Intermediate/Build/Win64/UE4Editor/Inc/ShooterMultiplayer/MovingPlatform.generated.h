@@ -57,7 +57,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMovingPlatform); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMovingPlatform)
 
 
-#define ShooterMultiplayer_Source_ShooterMultiplayer_MovingPlatform_h_15_PRIVATE_PROPERTY_OFFSET
+#define ShooterMultiplayer_Source_ShooterMultiplayer_MovingPlatform_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ActiveTriggers() { return STRUCT_OFFSET(AMovingPlatform, ActiveTriggers); }
+
+
 #define ShooterMultiplayer_Source_ShooterMultiplayer_MovingPlatform_h_12_PROLOG
 #define ShooterMultiplayer_Source_ShooterMultiplayer_MovingPlatform_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

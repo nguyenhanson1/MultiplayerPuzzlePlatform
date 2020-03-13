@@ -67,4 +67,14 @@
       <Filter>Source\ShooterMultiplayer</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\ShooterMultiplayer\PuzzlePlatformGameInstance.h">
+      <Filter>Source\ShooterMultiplayer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\ShooterMultiplayer\PuzzlePlatformGameInstance.cpp">
+      <Filter>Source\ShooterMultiplayer</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

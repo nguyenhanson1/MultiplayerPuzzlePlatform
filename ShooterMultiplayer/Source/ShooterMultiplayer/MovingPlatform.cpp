@@ -23,19 +23,32 @@ void AMovingPlatform::BeginPlay() {
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (HasAuthority())
-	{
-		FVector Location = GetActorLocation();
-		float journeyLength = (GlobalTargetLocation - GlobalStartLocation).Size();
-		float journeyTravelled = (Location - GlobalStartLocation).Size();
-		if (journeyTravelled >= journeyLength) {
-			FVector Swap = GlobalStartLocation;
-			GlobalStartLocation = GlobalTargetLocation;
-			GlobalTargetLocation = Swap;
+	if (ActiveTriggers > 0) {
+		if (HasAuthority())
+		{
+			FVector Location = GetActorLocation();
+			float journeyLength = (GlobalTargetLocation - GlobalStartLocation).Size();
+			float journeyTravelled = (Location - GlobalStartLocation).Size();
+			if (journeyTravelled >= journeyLength) {
+				FVector Swap = GlobalStartLocation;
+				GlobalStartLocation = GlobalTargetLocation;
+				GlobalTargetLocation = Swap;
+			}
+			FVector Direction = (GlobalTargetLocation - GlobalStartLocation).GetSafeNormal();
+			Location += Direction * Speed * DeltaTime;
+			SetActorLocation(Location);
 		}
-		FVector Direction = (GlobalTargetLocation - GlobalStartLocation).GetSafeNormal();
-		Location += Direction * Speed * DeltaTime;
-		SetActorLocation(Location);
+	}
+	
+}
+
+void AMovingPlatform::AddActiveTrigger() {
+	ActiveTriggers++;
+}
+
+void AMovingPlatform::RemoveActiveTrigger() {
+	if (ActiveTriggers > 0) {
+		ActiveTriggers--;
 	}
 	
 }
