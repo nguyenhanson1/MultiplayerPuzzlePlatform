@@ -14,7 +14,7 @@ APlatformTrigger::APlatformTrigger()
 	RootComponent = TriggerVolume;
 	TriggerVolume->OnComponentBeginOverlap.AddDynamic(this, &APlatformTrigger::OnOverlapBegin);
 	TriggerVolume->OnComponentEndOverlap.AddDynamic(this, &APlatformTrigger::OnOverlapEnd);
-
+	
 }
 
 // Called when the game starts or when spawned
