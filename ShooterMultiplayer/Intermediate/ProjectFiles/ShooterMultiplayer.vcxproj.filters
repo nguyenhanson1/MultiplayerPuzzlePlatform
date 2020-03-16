@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ShooterMultiplayer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{4F8444BE-10BA-4A6C-9D9C-19F32E3A236E}</UniqueIdentifier>
+      <UniqueIdentifier>{3C9B92CA-7653-49B9-9EFC-CE249F0497E7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ShooterMultiplayer.Target.cs">
       <Filter>Source</Filter>
@@ -13,7 +13,7 @@
     </None>
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{973D9583-FBFE-40E2-A07A-52C623F64D5B}</UniqueIdentifier>
+      <UniqueIdentifier>{C6112851-A0FA-451A-B9C7-1F5A771943AA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ShooterMultiplayer">
-      <UniqueIdentifier>{5A1F9B90-6788-48CC-8B44-922519B5C9C4}</UniqueIdentifier>
+      <UniqueIdentifier>{068EAC02-4CAE-4B50-B4B1-135BBCD7EBF7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ShooterMultiplayer\MovingPlatform.cpp">
       <Filter>Source\ShooterMultiplayer</Filter>
@@ -43,6 +43,12 @@
       <Filter>Source\ShooterMultiplayer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ShooterMultiplayer\PlatformTrigger.h">
+      <Filter>Source\ShooterMultiplayer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterMultiplayer\PuzzlePlatformGameInstance.cpp">
+      <Filter>Source\ShooterMultiplayer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterMultiplayer\PuzzlePlatformGameInstance.h">
       <Filter>Source\ShooterMultiplayer</Filter>
     </ClInclude>
     <None Include="..\..\Source\ShooterMultiplayer\ShooterMultiplayer.Build.cs">
@@ -66,15 +72,5 @@
     <ClInclude Include="..\..\Source\ShooterMultiplayer\ShooterMultiplayerGameMode.h">
       <Filter>Source\ShooterMultiplayer</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\ShooterMultiplayer\PuzzlePlatformGameInstance.h">
-      <Filter>Source\ShooterMultiplayer</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\ShooterMultiplayer\PuzzlePlatformGameInstance.cpp">
-      <Filter>Source\ShooterMultiplayer</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
