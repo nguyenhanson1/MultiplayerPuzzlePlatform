@@ -17,6 +17,9 @@ class SHOOTERMULTIPLAYER_API UPuzzlePlatformGameInstance : public UGameInstance
 public:
 	UPuzzlePlatformGameInstance(const FObjectInitializer & ObjectInitializer);
 
+	UFUNCTION(BlueprintCallable)
+	void LoadMenu();
+
 	virtual void Init();
 
 	UFUNCTION(Exec)

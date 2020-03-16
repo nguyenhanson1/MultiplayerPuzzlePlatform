@@ -17,6 +17,16 @@ UPuzzlePlatformGameInstance::UPuzzlePlatformGameInstance(const FObjectInitialize
 
 }
 
+void UPuzzlePlatformGameInstance::LoadMenu()
+{
+	if (!ensure(MenuClass!= nullptr)) return;
+	
+	UUserWidget* Menu = CreateWidget<UUserWidget>(this, MenuClass);
+	if (!ensure(Menu != nullptr)) return;
+
+	Menu->AddToViewport();
+}
+
 void UPuzzlePlatformGameInstance::Init() {
 	UE_LOG(LogTemp, Warning, TEXT("Found Class %s"), *MenuClass->GetName());
 }
