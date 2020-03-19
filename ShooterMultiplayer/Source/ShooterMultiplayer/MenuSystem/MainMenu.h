@@ -17,6 +17,10 @@ class SHOOTERMULTIPLAYER_API UMainMenu : public UUserWidget
 	GENERATED_BODY()
 public:
 	void SetMenuInterface(IMenuInterface* MenuInterface);
+
+	void SetUp();
+
+	void TearDown();
 protected:
 	virtual bool Initialize();
 

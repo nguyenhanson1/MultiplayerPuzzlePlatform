@@ -22,21 +22,10 @@ void UPuzzlePlatformGameInstance::LoadMenu()
 {
 	if (!ensure(MenuClass!= nullptr)) return;
 	
-	UMainMenu* Menu = CreateWidget<UMainMenu>(this, MenuClass);
+	Menu = CreateWidget<UMainMenu>(this, MenuClass);
 	if (!ensure(Menu != nullptr)) return;
 
-	APlayerController* PlayerController = GetFirstLocalPlayerController();
-	if (!ensure(PlayerController != nullptr)) return;
-
-	Menu->AddToViewport();
-
-	FInputModeUIOnly InputModeData;
-	InputModeData.SetWidgetToFocus(Menu->TakeWidget());
-	InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
-
-	PlayerController->SetInputMode(InputModeData);
-
-	PlayerController->bShowMouseCursor = true;
+	Menu->SetUp();
 	
 	Menu->SetMenuInterface(this);
 }
@@ -47,6 +36,10 @@ void UPuzzlePlatformGameInstance::Init() {
 
 void UPuzzlePlatformGameInstance::Host() 
 {
+	if (Menu != nullptr)
+	{
+		Menu->TearDown();
+	}
 	UEngine* Engine = GetEngine();
 	if (!ensure(Engine != nullptr)) return;
 
@@ -56,6 +49,8 @@ void UPuzzlePlatformGameInstance::Host()
 	if (!ensure(World != nullptr)) return;
 
 	World->ServerTravel("/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen");
+
+
 }
 
 void UPuzzlePlatformGameInstance::Join(const FString& Address)

@@ -3,6 +3,7 @@
 #include "MainMenu.h"
 #include "Components/Button.h"
 #include "PuzzlePlatformGameInstance.h"
+
 bool UMainMenu::Initialize() {
 
 	bool Success = Super::Initialize();
@@ -17,9 +18,44 @@ bool UMainMenu::Initialize() {
 	return true;
 }
 
+void UMainMenu::SetUp()
+{
+	this->AddToViewport();
+	UWorld* World = GetWorld();
+	if (!ensure(World != nullptr)) return;
+
+	APlayerController* PlayerController = World->GetFirstPlayerController();
+	if (!ensure(PlayerController != nullptr)) return;
+
+	FInputModeUIOnly InputModeData;
+	InputModeData.SetWidgetToFocus(this->TakeWidget());
+	InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
+
+	PlayerController->SetInputMode(InputModeData);
+
+	PlayerController->bShowMouseCursor = true;
+}
+
+void UMainMenu::TearDown()
+{
+	this->RemoveFromViewport();
+	FInputModeGameOnly InputModeData;
+	UWorld* World = GetWorld();
+	if (!ensure(World != nullptr)) return;
+
+	APlayerController* PlayerController = World->GetFirstPlayerController();
+	if (!ensure(PlayerController != nullptr)) return;
+	
+	FInputModeGameOnly InputModeGame;
+	PlayerController->SetInputMode(InputModeGame);
+
+	PlayerController->bShowMouseCursor = false;
+}
+
 void UMainMenu::SetMenuInterface(IMenuInterface* MenuInterface) {
 	this->MenuInterface = MenuInterface;
 }
+
 void UMainMenu::HostServer()
 {
 	if (MenuInterface != nullptr) {
