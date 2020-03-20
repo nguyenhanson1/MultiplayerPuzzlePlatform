@@ -88,4 +88,20 @@
       <Filter>Source\ShooterMultiplayer\MenuSystem</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\ShooterMultiplayer\MenuSystem\PauseMenu.h">
+      <Filter>Source\ShooterMultiplayer\MenuSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ShooterMultiplayer\MenuSystem\MenuWidget_Base.h">
+      <Filter>Source\ShooterMultiplayer\MenuSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\ShooterMultiplayer\MenuSystem\PauseMenu.cpp">
+      <Filter>Source\ShooterMultiplayer\MenuSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ShooterMultiplayer\MenuSystem\MenuWidget_Base.cpp">
+      <Filter>Source\ShooterMultiplayer\MenuSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

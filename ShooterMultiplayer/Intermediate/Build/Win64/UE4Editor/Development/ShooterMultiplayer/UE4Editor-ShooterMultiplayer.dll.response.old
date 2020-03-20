@@ -33,6 +33,8 @@
 /FUNCTIONPADMIN
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\ShooterMultiplayerEditor\Development\Engine\SharedPCH.Engine.h.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\MainMenu.cpp.obj"
+"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\MenuInterface.cpp.obj"
+"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\PauseMenu.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\MovingPlatform.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\PlatformTrigger.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\PuzzlePlatformGameInstance.cpp.obj"
@@ -40,7 +42,9 @@
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\ShooterMultiplayerCharacter.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\ShooterMultiplayerGameMode.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\MainMenu.gen.cpp.obj"
+"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\MenuInterface.gen.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\MovingPlatform.gen.cpp.obj"
+"D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\PauseMenu.gen.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\PlatformTrigger.gen.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\PuzzlePlatformGameInstance.gen.cpp.obj"
 "D:\Repos\ShooterMult\ShooterMultiplayer\Intermediate\Build\Win64\UE4Editor\Development\ShooterMultiplayer\ShooterMultiplayer.init.gen.cpp.obj"
