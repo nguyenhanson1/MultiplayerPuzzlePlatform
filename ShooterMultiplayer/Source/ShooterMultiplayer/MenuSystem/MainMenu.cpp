@@ -2,7 +2,7 @@
 
 #include "MainMenu.h"
 #include "Components/Button.h"
-#include "PuzzlePlatformGameInstance.h"
+#include "MenuWidget_Base.h"
 #include "Components/WidgetSwitcher.h"
 #include "Components/EditableTextBox.h"
 
@@ -28,9 +28,8 @@ bool UMainMenu::Initialize() {
 
 void UMainMenu::HostServer()
 {
-	if (MenuInterface != nullptr) {
-		MenuInterface->Host();
-		
+	if (this->MenuInterface != nullptr) {
+		this->MenuInterface->Host();
 	}
 }
 

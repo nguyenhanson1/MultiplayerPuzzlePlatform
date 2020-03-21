@@ -46,7 +46,6 @@ private:
 	class UEditableTextBox* IPAddressField;
 
 	
-	
 		
 	UFUNCTION()
 		void HostServer();
@@ -59,6 +58,4 @@ private:
 
 	UFUNCTION()
 		void JoinServer();
-
-	IMenuInterface* MenuInterface;
 };

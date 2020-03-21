@@ -27,14 +27,14 @@ public:
 	virtual void Init();
 
 	UFUNCTION(Exec)
-	void Host() override;
+	void Host() ;
 	UFUNCTION(Exec)
-	void Join(const FString& Address) override;
+	void Join(const FString& Address);
 
-	virtual void LoadMainMenu() override;
+	virtual void LoadMainMenu();
 
 private:
 	TSubclassOf<class UMenuWidget_Base> MenuClass;
 	TSubclassOf<class UMenuWidget_Base> PauseMenuClass;
-	class UMenuWidget_Base* Menu;
+	class UMainMenu* Menu;
 };
