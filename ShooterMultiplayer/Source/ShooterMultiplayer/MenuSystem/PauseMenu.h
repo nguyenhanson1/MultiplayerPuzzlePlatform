@@ -22,7 +22,7 @@ private:
 		class UButton* CancelButton;
 	UPROPERTY(meta = (BindWidget))
 		class UButton* QuitButton;
-
+	
 
 	UFUNCTION()
 		void ClosePauseMenu();
